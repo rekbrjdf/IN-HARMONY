@@ -2200,7 +2200,7 @@ input[type="phone"]:focus:-ms-input-placeholder {
 .main-fon {
     background: url(../img/main-fon.jpg) 50% 50% no-repeat;
     min-height: 960px;
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     position: relative;
 }
@@ -4290,156 +4290,6 @@ only screen and (min-width: 768px) and (max-width: 1239px) {
         min-width: 120px;
         border-width: 1px;
     }
-    .b-tableexpert {
-        margin-bottom: 70px;
-    }
-    .b-tableexpert table {
-        width: auto;
-    }
-    .b-tableexpert table th:after {
-        display: none;
-    }
-    .b-tableexpert table th:first-child,
-    .b-tableexpert table td:first-child {
-        text-align: left;
-        min-width: 57px;
-    }
-    .b-tableexpert table td:nth-child(2) {
-        min-width: 320px;
-    }
-    .b-tableexpert table td:nth-child(3) {
-        min-width: 90px;
-    }
-    .b-tableexpert table th,
-    .b-tableexpert table td {
-        text-align: left;
-        vertical-align: top;
-        box-sizing: border-box;
-        padding: 20px 15px;
-    }
-    .b-services-onlene {
-        text-align: center;
-        margin: 0px -10px;
-        margin-bottom: 95px;
-    }
-    .b-services-onlene .services-onlene__item {
-        width: 52%;
-        margin-right: -0.273em;
-        padding: 0 10px;
-    }
-    .b-services-onlene .services-onlene__item:last-child {
-        width: 48%;
-    }
-    .b-how-expert ul {
-        margin: 0 0 40px 0;
-        padding: 0;
-    }
-    .b-how-expert li:after {
-        display: none;
-    }
-    .row-expert {
-        background-image: url(../img/steps1.jpg);
-        min-height: 690px;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-        padding-top: 70px;
-        padding-bottom: 50px;
-        margin-bottom: 69px;
-    }
-    .row-expert h3 {
-        padding-top: 20px;
-        color: #fff;
-        font-size: 36px;
-        text-align: center;
-    }
-    /*------------------------*/
-    .b-officially-doc .officially-doc__block-bred .officially-doc__item {
-        width: auto;
-    }
-    .b-officially-doc .officially-doc__item img {
-        width: 100%;
-        height: auto;
-    }
-    .b-tableofficially table td:first-child {
-        border-right: 1px solid #cbcbcb;
-    }
-    .b-officially-doc .officially-doc__item {
-        /*width: calc(100% / 2);*/
-        max-width: 347px;
-    }
-    .b-officially-doc .officially-doc__al {
-        max-width: 187px;
-    }
-    .b-officially-doc .officially-doc__al img {
-        width: 100%;
-        height: auto;
-    }
-    /*------------------------*/
-    .b-tablereestr {
-        margin-bottom: 70px;
-    }
-    .b-tablereestr table th,
-    .b-tablereestr table td {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    .b-tablereestr table th::after {
-        display: none;
-    }
-    .b-tablereestr table td:nth-child(1) {
-        min-width: 120px;
-        box-sizing: border-box;
-    }
-    .b-tablereestr table td:nth-child(2) {
-        min-width: 147px;
-        box-sizing: border-box;
-    }
-    .b-tablereestr table td:nth-child(3) {
-        min-width: 125px;
-        box-sizing: border-box;
-    }
-    .b-tablereestr table td:nth-child(4) {
-        min-width: 540px;
-        box-sizing: border-box;
-    }
-    .b-tablereestr table td:nth-child(5) {
-        min-width: 260px;
-        box-sizing: border-box;
-    }
-    /*------------------------*/
-    /*------------------------*/
-    /*------------------------*/
-    .b-tablelibr {
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 40px;
-    }
-    .b-tablelibr table th,
-    .b-tablelibr table td {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    .b-tablelibr table th::after {
-        display: none;
-    }
-    .b-tablelibr table td:nth-child(1) {
-        min-width: 140px;
-        box-sizing: border-box;
-    }
-    .b-tablelibr table td:nth-child(2) {
-        min-width: 210px;
-        box-sizing: border-box;
-    }
-    .b-tablelibr table td:nth-child(3) {
-        min-width: 320px;
-        box-sizing: border-box;
-    }
-    .b-tablelibr table td:nth-child(4) {
-        min-width: 320px;
-        box-sizing: border-box;
-    }
-    /*------------------------*/
 }
 
 
@@ -4625,6 +4475,9 @@ only screen and (max-width: 767px) {
     .fon-client {
         position: relative;
         background: rgb(212, 240, 210);
+    }
+    .fon-client:before {
+        display: none;
     }
     .b-client {
         padding: 50px 0px;
