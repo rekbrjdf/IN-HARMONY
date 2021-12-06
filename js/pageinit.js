@@ -110,10 +110,10 @@ $(function() {
     //end news carousel
 
 
-    //begin expert carousel
-    function expert1Carusel() {
+    //begin result carousel
+    function result1Carusel() {
         var checkWidth = $(window).width();
-        var infoCaruselBox = $('.js-expert-owlcarousel1');
+        var infoCaruselBox = $('.js-result-owlcarousel1');
 
         if (checkWidth < 747) {
             infoCaruselBox.addClass('owl-carousel').owlCarousel({
@@ -133,15 +133,15 @@ $(function() {
             }
         }
     };
-    $(document).ready(expert1Carusel);
-    $(window).resize(expert1Carusel);
-    //end expertcarousel
+    $(document).ready(result1Carusel);
+    $(window).resize(result1Carusel);
+    //end resultcarousel
 
 
-    //start expert
-    function expertCarusel() {
+    //start result
+    function resultCarusel() {
         var checkWidth = $(window).width();
-        var infoCaruselBox = $('.js-carousel-expert');
+        var infoCaruselBox = $('.js-carousel-result');
 
 
         infoCaruselBox.addClass('owl-carousel').owlCarousel({
@@ -151,7 +151,7 @@ $(function() {
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             nav: true,
-            dots: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 1
@@ -170,34 +170,12 @@ $(function() {
         });
 
     };
-    $(document).ready(expertCarusel);
-    $(window).resize(expertCarusel);
+    $(document).ready(resultCarusel);
+    $(window).resize(resultCarusel);
     //end mainban
 
 
-    //start client  
-    function clientCarusel() {
-        var checkWidth = $(window).width();
-        var infoCaruselBox = $('.js-carousel-client');
 
-        infoCaruselBox.addClass('owl-carousel').owlCarousel({
-            center: true,
-            items: 4,
-            nav: true,
-            dots: false,
-            loop: true,
-            margin: 10,
-            responsive: {
-                600: {
-                    items: 2
-                }
-            }
-        });
-
-    };
-    $(document).ready(clientCarusel);
-    $(window).resize(clientCarusel);
-    //end client  
 
     //start reviews  
     function reviewsCarusel() {
@@ -217,10 +195,10 @@ $(function() {
                     items: 2
                 },
                 980: {
-                    items: 4
+                    items: 3
                 },
                 1950: {
-                    item: 5
+                    item: 3
                 }
             }
         });
@@ -282,6 +260,15 @@ $(function() {
     //end siderbar
 });
 
+
+$('.video__link').on('click', function(e) {
+    e.preventDefault();
+
+    var videoId = $(this).attr('data-video-id');
+
+    $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+    $(this).addClass('is-playing');
+});
 
 // tabbed content
 // http://www.entheosweb.com/tutorials/css/tabs.asp
