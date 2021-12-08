@@ -6,40 +6,40 @@ $(function() {
     $("#phone2").inputmask({ "mask": "+7 (999) 999-9999" });
 
 
-    //start mainban
-    function mainbanCarusel() {
+    //start faq
+    function faqCarusel() {
         var checkWidth = $(window).width();
-        var infoCaruselBox = $('.js-carousel-mainban');
+        var infoCaruselBox = $('.js-carousel-faq');
 
 
         infoCaruselBox.addClass('owl-carousel').owlCarousel({
-            margin: 0,
-            autoplay: true,
+            margin: 12,
+            autoplay: false,
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             nav: true,
-            dots: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 1
                 },
                 768: {
-                    items: 1
+                    items: 2
                 },
                 980: {
-                    items: 1
+                    items: 3
                 },
                 1950: {
-                    item: 1
+                    item: 3
 
                 }
             }
         });
 
     };
-    $(document).ready(mainbanCarusel);
-    $(window).resize(mainbanCarusel);
-    //end mainban
+    $(document).ready(faqCarusel);
+    $(window).resize(faqCarusel);
+    //end faq
 
     //begin brand carousel
     function fotoCarusel() {
@@ -108,6 +108,38 @@ $(function() {
     $(document).ready(newsCarusel);
     $(window).resize(newsCarusel);
     //end news carousel
+
+    //begin people carousel
+    function peopleCarusel() {
+        var checkWidth = $(window).width();
+        var infoCaruselBox = $('.js-people');
+
+        if (checkWidth < 1219) {
+            infoCaruselBox.addClass('owl-carousel').owlCarousel({
+                margin: 0,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1239: {
+                        items: 2
+                    }
+                }
+            });
+        } else {
+            if (infoCaruselBox.data('owlCarousel') != 'undefined') {
+                infoCaruselBox.trigger('destroy.owl.carousel').removeClass('owl-carousel');
+            }
+        }
+    };
+    $(document).ready(peopleCarusel);
+    $(window).resize(peopleCarusel);
+    //end people carousel
 
 
     //begin result carousel
@@ -344,7 +376,26 @@ $(document).ready(function() {
 
 }); //end ready
 
-
+var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    initialSlide: 2,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 10,
+        initialSlide: 3,
+        slideShadows: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});
 
 class Slider {
     constructor() {
