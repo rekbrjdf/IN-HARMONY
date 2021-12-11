@@ -390,7 +390,11 @@ $(document).ready(function() {
     });
 
 }); //end ready
-
+$(function() {
+    $('.js-openmenu').click(function() {
+        $(this).parent().toggleClass('on-1');
+    });
+});
 var swiper = new Swiper(".swiper-container", {
     effect: "coverflow",
     grabCursor: true,
