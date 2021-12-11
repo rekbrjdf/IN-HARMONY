@@ -5,6 +5,21 @@ $(function() {
     $("#phone1").inputmask({ "mask": "+7 (999) 999-9999" });
     $("#phone2").inputmask({ "mask": "+7 (999) 999-9999" });
 
+    $(document).ready(function() {
+        $(".navigation__item").on("click", "a", function(event) {
+            event.preventDefault();
+
+
+            var id = $(this).attr('href'),
+
+                top = $(id).offset().top;
+
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+
+
+    });
+
 
     //start faq
     function faqCarusel() {
