@@ -395,27 +395,34 @@ $(function() {
         $(this).parent().toggleClass('on-1');
     });
 });
-var swiper = new Swiper(".swiper-container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    centeredSlides: true,
-    initialSlide: 2,
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 10,
-        initialSlide: 3,
-        slideShadows: true
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
-});
 
+
+$(document).ready(function() {
+    var swiper = $('.swiper-container').length === 1 ? new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        initialSlide: 2,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 10,
+            initialSlide: 3,
+            slideShadows: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    }) : '';
+}
+);
+
+
+console.log($('.swiper-container').length, '12');
 class Slider {
     constructor() {
         this.container = document.querySelector('.slider');
@@ -470,7 +477,8 @@ class Slider {
     }
 }
 
-const slider = new Slider();
+const slider = document.querySelector('.slides') && new Slider();
 document.querySelector('.next').onclick = slider.next;
 document.querySelector('.prev').onclick = slider.prev;
 document.querySelector('.slides').onclick = slider.next;
+
