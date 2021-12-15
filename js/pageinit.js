@@ -478,7 +478,4 @@ class Slider {
 }
 
 const slider = document.querySelector('.slides') && new Slider();
-document.querySelector('.next').onclick = slider.next;
-document.querySelector('.prev').onclick = slider.prev;
-document.querySelector('.slides').onclick = slider.next;
 

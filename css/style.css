@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserratBold.woff') format('woff'), url('../fonts/montserratBold.ttf') format('truetype');
+    src: url('../fonts/montserratBold.ttf') format('truetype');
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/montserratRegular.woff') format('woff'), url('../fonts/montserratRegular.ttf') format('truetype');
+    src: url('../fonts/montserratRegular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Medium';
-    src: url('../fonts/montserratMedium.woff') format('woff'), url('../fonts/montserratMedium.ttf') format('truetype');
+    src: url('../fonts/montserratMedium.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Garamond';
-    src: url('../fonts/garamond.woff') format('woff'), url('../fonts/garamond.ttf') format('truetype');
+    src: url('../fonts/garamond.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -1545,6 +1545,7 @@ div[class*="__text"] li {
 }
 
 .b-service .service__contet {
+    padding-top: 40px;
     max-width: 553px;
     display: flex;
     align-items: center;
@@ -6129,6 +6130,7 @@ only screen and (max-width: 767px) {
         margin-bottom: 30px;
     }
     .b-service .service__contet {
+        padding-top: 0;
         max-width: 100%;
         display: block;
         align-items: center;
