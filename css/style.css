@@ -2886,6 +2886,7 @@ input[type="phone"]:focus:-ms-input-placeholder {
 
 .b-about .about__content {
     padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 .fon-content-reverse .b-about .about__content {
