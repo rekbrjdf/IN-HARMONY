@@ -2887,11 +2887,13 @@ input[type="phone"]:focus:-ms-input-placeholder {
 .b-about .about__content {
     padding-top: 20px;
     margin-bottom: 30px;
+    width: 50%;
 }
 
 .fon-content-reverse .b-about .about__content {
     padding-top: 0;
     padding-left: 70px;
+    width: 100%;
 }
 
 .b-about .about__title {
@@ -2915,7 +2917,152 @@ input[type="phone"]:focus:-ms-input-placeholder {
 .b-about .about__img {
     margin: 0px 0 0px 20px;
 }
+/*-------------------------------------*/
+.fon-doctor {
+    position: relative;
+    background: linear-gradient(
+90deg, #ffffff 50%, #D4F0D2 50%);
+}
+.fon-doctor:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 406px;
+    height: 705px;
+    background: url(../img/fon-doctor-left.png) 50% 50% no-repeat;
+}
 
+.fon-doctor:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 654px;
+    height: 545px;
+    background: url(../img/fon-doctor-right.png) 50% 50% no-repeat;
+}
+.b-about-doctor {
+    align-items: center;
+    padding-top: 0;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 100px;
+} 
+.b-about-doctor .about__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    margin-right: 100px;
+}
+/*-------------------------------------*/
+
+.fon-education {
+    padding: 96px 0;
+    position: relative;
+    background: #506C4E;
+}
+.fon-education:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 248px;
+    height: 528px;
+    background: url(../img/fon-education.png) 50% 50% no-repeat;
+}
+.b-education {
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    
+}
+.b-education .education__title {
+    font-weight: bold;
+    font-size: 34px;
+    border-bottom: 2px solid  #C6E0C4;
+    margin-bottom: 37px;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.list {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+}
+.list li {
+    position: relative;
+    padding: 0;
+    margin: 0 0 40px 0;
+    list-style-type: none;
+    list-style: none;
+}
+/*-------------------------------------*/
+
+.fon-date {
+    padding: 96px 0;
+    position: relative;
+    background: #fff;
+}
+.fon-date:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right:  0;
+    margin: auto;
+    width: 440px;
+    height: 761px;
+    background: url(../img/fon-date-left.png) 50% 50% no-repeat;
+}
+.fon-date:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 441px;
+    height: 761px;
+    background: url(../img/fon-date-right.png) 50% 50% no-repeat;
+}
+.b-date { 
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    
+}
+.b-date .date__title {
+    font-weight: bold;
+    font-size: 34px;
+    border-bottom: 2px solid  #C6E0C4;
+    margin-bottom: 37px;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #3F3F3F;
+}
+.b-date .date__item {
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+.b-date  .date__time {
+    font-family: Garamond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.b-date  p {}
+.b-date  {}
 
 /*-------------------------------------*/
 
@@ -3050,7 +3197,76 @@ input[type="phone"]:focus:-ms-input-placeholder {
 .b-plus.plus--three .plus__name {
     font-size: 34px;
 }
+/*-------------------------------------*/
 
+.fon-experience {
+    position: relative;
+    background: #F5F5F5;
+}
+
+
+.b-experience {
+    padding: 98px 0 98px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.b-experience .experience__content .experience__title {
+    font-weight: bold;
+    font-size: 38px;
+    border-bottom: 2px solid #C6E0C4;
+    margin-bottom: 28px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.b-experience .experience__text {
+    margin-bottom: 60px;
+}
+.b-experience .experience__text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;  
+    text-align: center; 
+    color: #3F3F3F;
+}
+.b-experience  {}
+.b-experience  .experience__wrapper {
+    padding-top: 64px;
+    border-top: 2px solid #C6E0C4;;
+}
+.b-experience .experience__wrapper .experience__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px; 
+    color: #3F3F3F;
+    margin-bottom: 40px;
+}
+.b-experience .experience__block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.b-experience .experience__item {
+    width: 33.3%;
+    padding: 0 12px;
+}
+.b-experience .experience__block p {
+    font-family: Garamond; 
+    font-weight: normal;
+    font-size: 28px; 
+    color: #3F3F3F;
+    margin-bottom: 12px;
+}
+.b-experience .experience__block span {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    display: block;
+}
 
 /*-------------------------------------*/
 
@@ -5568,6 +5784,13 @@ only screen and (min-width: 768px) and (max-width: 1239px) {
     /*------------------------*/
 }
 
+@media handheld,
+only screen and (min-width: 768px) and (max-width: 1150px) {
+    .fon-doctor {
+        position: relative;
+        background: rgb(212, 240, 210);
+    }
+}
 
 /*------------------------*/
 
@@ -5692,6 +5915,7 @@ only screen and (max-width: 767px) {
         text-align: center;
         padding-top: 0px;
         margin-bottom: 55px;
+        width: 100%; 
     }
     .b-about .about__img {
         width: 100%;
@@ -6232,10 +6456,34 @@ only screen and (max-width: 767px) {
         margin: 0;
     }
     /*------------------------*/
+    .fon-doctor {
+        margin-top: -135px;
+        position: relative;
+        background: rgb(212, 240, 210);
+    }
+    .b-about-doctor .about__title { 
+        margin-right: 0;
+    }
     /*------------------------*/
+    .b-experience .experience__block {
+        display: block; 
+    }
+    .b-experience .experience__item {
+        width: 100%;
+        padding: 0;
+    }
     /*------------------------*/
+    .b-education { 
+        width: 100%; 
+    }
     /*------------------------*/
+    .b-date { 
+        width: 100%;
+    }
     /*------------------------*/
+    ul.list { 
+        padding: 0px !important;
+    }
     /*------------------------*/
     /*------------------------*/
     /*------------------------*/
